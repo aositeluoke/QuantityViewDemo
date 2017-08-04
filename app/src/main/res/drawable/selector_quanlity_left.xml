@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--可点击按下时-->
+    <item android:state_enabled="true" android:state_pressed="true" android:drawable="@drawable/icon_xq_reduse_p">
+        <shape>
+            <solid android:color="#d2d2d2" />
+            <corners android:bottomLeftRadius="10dp" android:topLeftRadius="10dp" />
+
+        </shape>
+    </item>
+
+
+    <!--可点击 未按下时-->
+    <item android:state_enabled="true" android:state_pressed="false" android:drawable="@drawable/icon_xq_reduse_n">
+        <shape>
+            <solid android:color="#f2f2f2" />
+            <corners android:bottomLeftRadius="10dp" android:topLeftRadius="10dp" />
+
+        </shape>
+    </item>
+
+
+    <!--不可点击时-->
+    <item android:state_enabled="false" android:drawable="@drawable/icon_xq_reduse">
+        <shape>
+            <solid android:color="#f2f2f2" />
+            <corners android:bottomLeftRadius="10dp" android:topLeftRadius="10dp" />
+
+        </shape>
+    </item>
+</selector>

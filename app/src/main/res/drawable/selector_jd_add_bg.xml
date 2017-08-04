@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--可点击按下时-->
+    <item android:state_pressed="true">
+        <shape>
+            <solid android:color="@color/color_e3e5e9" />
+            <corners android:bottomRightRadius="@dimen/jd_quantity_radius" android:topRightRadius="@dimen/jd_quantity_radius" />
+
+        </shape>
+    </item>
+
+
+    <!--可点击 未按下时-->
+    <item android:state_pressed="false">
+        <shape>
+            <solid android:color="@color/white" />
+            <corners android:bottomRightRadius="@dimen/jd_quantity_radius" android:topRightRadius="@dimen/jd_quantity_radius" />
+        </shape>
+    </item>
+
+</selector>

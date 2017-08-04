@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin">
+
+
+
+    <!--京东购物车效果-->
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="20dp"
+        android:text="京东购物车效果"
+        android:textColor="#333333"
+        android:textSize="16dp" />
+
+
+    <com.aositeluoke.quantityviewdemo.QuantityView
+        android:id="@+id/quantity"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:background="@drawable/shape_jd_quantity"
+        android:padding="1dp"
+        app:add_background="@drawable/selector_jd_add_bg"
+        app:add_text="+"
+        app:can_input="false"
+        app:divider_color="@color/color_232326"
+        app:divider_width="1dp"
+        app:input_background="@android:color/white"
+        app:input_text_color="@color/color_232326"
+        app:input_text_size="16dp"
+        app:input_text_width="50dp"
+        app:max_num="15"
+        app:min_num="0"
+        app:num="10"
+        app:op_text_color="@color/selector_jg_quantity"
+        app:op_text_size="20dp"
+        app:op_width="30dp"
+        app:sub_background="@drawable/selector_jd_sub_bg"
+        app:sub_text="-" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="20dp"
+        android:text="修改文字"
+        android:textSize="16dp" />
+
+    <com.aositeluoke.quantityviewdemo.QuantityView
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:background="@drawable/shape_jd_quantity"
+        android:padding="1dp"
+        app:add_background="@drawable/selector_jd_add_bg"
+        app:add_text="加"
+        app:can_input="true"
+        app:divider_color="@color/color_232326"
+        app:divider_width="1dp"
+        app:input_background="@android:color/white"
+        app:input_text_color="@color/color_232326"
+        app:input_text_size="16dp"
+        app:input_text_width="50dp"
+        app:max_num="15"
+        app:min_num="1"
+        app:num="10"
+        app:op_text_color="@color/selector_jg_quantity"
+        app:op_text_size="14dp"
+        app:op_width="30dp"
+        app:sub_background="@drawable/selector_jd_sub_bg"
+        app:sub_text="减" />
+
+</LinearLayout>
